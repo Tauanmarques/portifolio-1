@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="tools/fontawesome/css/all.css" />
     <link rel="stylesheet" href="css/estilos.css" />
 
+    <script src="tools/jquery/jquery.js"></script>
+
+    <script>
+        
+    </script>
+
 </head>
 <body>
 
@@ -22,12 +28,12 @@
             </div>
 
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Portifólio</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Restrito</a></li>
+                <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#servicos"><i class="fas fa-tasks"></i>Serviços</a></li>
+                <li><a href="#"><i class="fas fa-photo-video"></i>Portifólio</a></li>
+                <li><a href="#"><i class="fas fa-user-friends"></i>Sobre</a></li>
+                <li><a href="#"><i class="fas fa-comments"></i>Contato</a></li>
+                <li><a href="area_restrita/"><i class="fas fa-unlock-alt"></i>Restrito</a></li>
             </ul>
 
         </nav>
@@ -55,7 +61,7 @@
 
     <main id="corpo">
 
-        <section class="servicos">
+        <section id="servicos" class="servicos">
 
             <article class="servico">
                 <img src="imagens/service-design.svg" alt="Design">
@@ -183,63 +189,70 @@
 
     </main>
 
+    <!-- ========================================================= -->
+
     <footer id="rodape">
 
-        <div class="container-rodape">
+        <div class="sombreamento">
 
-            <section class="sobre">
+            <div class="container-rodape">
 
-                <img src="imagens/logo.png" alt="Logo" />
+                <section class="item-rodape sobre">
 
-                <p class="txt-sobre">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci reiciendis itaque nihil magni excepturi, assumenda in dolore iure necessitatibus deserunt nulla minima hic atque quos.</p>
+                    <img src="imagens/logo.png" alt="Logo" />
 
-                <h4 class="title-sobre">Siga-nos</h4>
+                    <p class="txt-sobre">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci reiciendis itaque nihil magni excepturi, assumenda in dolore iure necessitatibus deserunt.</p>
 
-                <div class="social-icons">
-                    <a href="#" title="Visite nosso Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="Visite nosso Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" title="Visite nosso LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" title="Visite nosso Instagram"><i class="fab fa-instagram"></i></a>
-                </div>
+                    <h4 class="title-sobre">Siga-nos</h4>
 
-            </section>
+                    <div class="social-icons">
+                        <a href="#" title="Visite nosso Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Visite nosso Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Visite nosso LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="Visite nosso Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
 
-            <section class="servicos">
+                </section>
 
-            <h4 class="title-servicos">serviços</h4>
+                <section class="item-rodape servicos">
 
-            <ul>
-                    <li><a href="#">Desenvolvimento WEB</a></li>
-                    <li><a href="#">WEB Hosting</a></li>
-                    <li><a href="#">Mídias Sociais</a></li>
-                    <li><a href="#"></a>Aplicações SEO</li>
-                    <li><a href="#"></a>Computação em Nuvem</li>
-                    <li><a href="#"></a>Segurança de dados</li>
-                </ul>
+                    <h4 class="title-servicos">Serviços</h4>
 
+                    <ul>
+                        <li><a href="#">Desenvolvimento WEB</a></li>
+                        <li><a href="#">WEB Hosting</a></li>
+                        <li><a href="#">Mídias Sociais</a></li>
+                        <li><a href="#">Aplicações SEO</a></li>
+                        <li><a href="#">Computação em Nuvem</a></li>
+                        <li><a href="#">Segurança de Dados</a></li>
+                    </ul>
 
-            </section>
+                </section>
 
-            <section class="contato">
-              
-            <h4 class="title-contato">Contatos</h4>
+                <section class="item-rodape contato">
 
-             <p class="txt-contatos">Rua das Margaridas, S/Nº</p>
-             <p class="txt-contatos">33 9 8400-9999</p>
-             <p class="txt-contatos">faleconosco@meusite.com.br</p>
+                    <h4 class="title-contato">Contatos</h4>
 
-             <h4 class="title-contato">Newsletter</h4>
-             <form action="" method="GET">
-                    <input type="email" name="news-email" id="news-email" placeholder="E-mail"/>
+                    <div class="container-contato">
+                        <p class="txt-contatos">Rua das Margaridas, S/Nº</p>
+                        <p class="txt-contatos">33 9 8400-9999</p>
+                        <p class="txt-contatos">contato@meusite.com.br</p>
+                    </div>
 
-                    <button type="submit"><i class="fab fa-telegram"></i></button>
-                </form>
+                    <h4 class="title-contato">Newsletter</h4>
+                    <form action="" method="GET">
+                        <input type="email" name="news-email" id="news-email" placeholder="E-Mail" />
 
-            </section>
+                        <button type="submit"><i class="fab fa-telegram"></i></button>
+                    </form>
+
+                </section>
+
+            </div>
+
+            <p class="txt-creditos">Tauan F &copy; 2025</p>
 
         </div>
-
-        <p class="txt-creditos">Tauan &copy; 2025</p>
 
     </footer>
 
